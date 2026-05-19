@@ -1,0 +1,6 @@
+*.class
+*.breakpoints
+*.replit
+**/.agents/
+*.nix
+**/.settings/
