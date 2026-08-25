@@ -1,52 +1,102 @@
+/* Mengatur tampilan elemen main sebagai bagian utama halaman */
 main {
+  /* Mengatur teks agar berada di tengah */
   text-align: center;
+
+  /* Mengatur posisi vertikal konten */
   vertical-align: center;
+
+  /* Menggunakan Flexbox untuk mengatur susunan elemen */
   display: flex;
+
+  /* Menyusun elemen anak secara vertikal dari atas ke bawah */
   flex-direction: column;
+
+  /* Memberikan jarak 30px dari bagian atas */
   margin-top: 30px;
+
+  /* Mengatur ukuran dasar elemen secara otomatis */
   flex-basis: auto;
 }
 
+
+/* Menerapkan box-sizing border-box pada seluruh elemen */
 * {
+  /* Padding dan border dihitung sebagai bagian dari ukuran elemen */
   box-sizing: border-box;
 }
 
+
+/* Mengatur jenis huruf utama pada seluruh halaman */
 body {
+  /* Menggunakan Arial, Helvetica, atau font sans-serif sebagai alternatif */
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Float four columns side by side */
+
+/* Mengatur tampilan kolom agar berjajar ke samping */
 .column {
+  /* Membuat kolom berada di sebelah kiri */
   float: left;
+
+  /* Mengatur lebar setiap kolom sebesar 25% */
   width: 25%;
+
+  /* Memberikan jarak horizontal sebesar 10px */
   padding: 0 10px;
+
+  /* Memberikan jarak 30px di bagian bawah kolom */
   margin-bottom: 30px;
 }
 
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
 
-/* Clear floats after the columns */
+/* Menghilangkan atau menyesuaikan margin tambahan akibat padding pada kolom */
+.row {
+  margin: 0 -5px;
+}
+
+
+/* Membersihkan efek float setelah elemen kolom */
 .row:after {
+  /* Membuat konten kosong */
   content: "";
+
+  /* Menampilkan elemen sebagai tabel */
   display: table;
+
+  /* Menghentikan efek float agar layout tetap rapi */
   clear: both;
 }
 
-/* Responsive columns */
+
+/* Mengatur tampilan responsif untuk layar dengan lebar maksimal 600px */
 @media screen and (max-width: 600px) {
+
+  /* Mengatur tampilan kolom pada layar kecil */
   .column {
+    /* Mengubah lebar kolom menjadi penuh */
     width: 100%;
+
+    /* Menggunakan Flexbox */
     display: flex;
+
+    /* Memberikan jarak 20px di bagian bawah */
     margin-bottom: 20px;
   }
 }
 
-/* Style the counter cards */
+
+/* Mengatur tampilan kartu */
 .card {
+  /* Memberikan efek bayangan pada kartu */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  /* Memberikan jarak 16px antara isi kartu dan batas kartu */
   padding: 16px;
+
+  /* Mengatur teks di dalam kartu agar berada di tengah */
   text-align: center;
+
+  /* Memberikan warna latar belakang abu-abu muda */
   background-color: #f1f1f1;
-  
 }
