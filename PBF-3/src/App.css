@@ -1,11 +1,25 @@
+/* Mengatur bagian utama halaman */
 main {
+
+  /* Membuat teks berada di tengah secara horizontal */
   text-align: center;
+
+  /* Mengatur posisi vertikal elemen menjadi tengah */
   vertical-align: center;
 }
 
+/* Mengatur tampilan bagian header */
 header {
+
+  /* Memberikan warna latar belakang blueviolet */
   background-color: blueviolet;
+
+  /* Mengatur warna teks menjadi putih */
   color: white;
+
+  /* Memberikan jarak 10 pixel di dalam header */
   padding: 10px;
+
+  /* Mengatur jenis font menjadi Lato, atau sans-serif sebagai alternatif */
   font-family: Lato, sans-serif;
 }
