@@ -1,116 +1,250 @@
+/* Mengatur container utama halaman */
 .container {
+  /* Memberikan padding horizontal sebesar 2rem */
   padding: 0 2rem;
 }
 
+
+/* Mengatur bagian utama halaman */
 .main {
+  /* Menentukan tinggi minimum sebesar tinggi layar */
   min-height: 100vh;
+
+  /* Memberikan padding atas dan bawah sebesar 4rem */
   padding: 4rem 0;
+
+  /* Membuat elemen fleksibel */
   flex: 1;
+
+  /* Menggunakan Flexbox */
   display: flex;
+
+  /* Mengatur arah elemen secara vertikal */
   flex-direction: column;
+
+  /* Menempatkan konten di tengah secara vertikal */
   justify-content: center;
+
+  /* Menempatkan konten di tengah secara horizontal */
   align-items: center;
 }
 
+
+/* Mengatur bagian footer */
 .footer {
+  /* Menggunakan Flexbox */
   display: flex;
+
+  /* Membuat footer fleksibel */
   flex: 1;
+
+  /* Memberikan padding atas dan bawah */
   padding: 2rem 0;
+
+  /* Memberikan garis di bagian atas footer */
   border-top: 1px solid #eaeaea;
+
+  /* Menempatkan konten di tengah secara horizontal */
   justify-content: center;
+
+  /* Menempatkan konten di tengah secara vertikal */
   align-items: center;
 }
 
+
+/* Mengatur elemen link atau <a> di dalam footer */
 .footer a {
+  /* Menggunakan Flexbox */
   display: flex;
+
+  /* Menempatkan isi link di tengah secara horizontal */
   justify-content: center;
+
+  /* Menempatkan isi link di tengah secara vertikal */
   align-items: center;
+
+  /* Membuat link memenuhi ruang yang tersedia */
   flex-grow: 1;
 }
 
+
+/* Mengatur link yang berada di dalam elemen dengan class title */
 .title a {
+  /* Memberikan warna biru pada link */
   color: #0070f3;
+
+  /* Menghilangkan garis bawah pada link */
   text-decoration: none;
 }
 
+
+/* Mengatur tampilan link saat diarahkan, difokuskan, atau diklik */
 .title a:hover,
 .title a:focus,
 .title a:active {
+  /* Menampilkan garis bawah pada teks */
   text-decoration: underline;
 }
 
+
+/* Mengatur tampilan judul utama */
 .title {
+  /* Menghilangkan margin bawaan */
   margin: 0;
+
+  /* Mengatur tinggi baris */
   line-height: 1.15;
+
+  /* Mengatur ukuran teks sebesar 4rem */
   font-size: 4rem;
 }
 
+
+/* Mengatur judul dan deskripsi agar berada di tengah */
 .title,
 .description {
+  /* Membuat teks rata tengah */
   text-align: center;
 }
 
+
+/* Mengatur tampilan deskripsi */
 .description {
+  /* Memberikan margin atas dan bawah sebesar 4rem */
   margin: 4rem 0;
+
+  /* Mengatur tinggi baris */
   line-height: 1.5;
+
+  /* Mengatur ukuran teks */
   font-size: 1.5rem;
 }
 
+
+/* Mengatur tampilan elemen dengan class code */
 .code {
+  /* Memberikan warna latar belakang */
   background: #fafafa;
+
+  /* Membuat sudut elemen menjadi melengkung */
   border-radius: 5px;
+
+  /* Memberikan jarak di dalam elemen */
   padding: 0.75rem;
+
+  /* Mengatur ukuran teks */
   font-size: 1.1rem;
+
+  /* Menggunakan beberapa pilihan font monospace */
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
+
+/* Mengatur container kumpulan card */
 .grid {
+  /* Menggunakan Flexbox */
   display: flex;
+
+  /* Menempatkan item di tengah secara vertikal */
   align-items: center;
+
+  /* Menempatkan item di tengah secara horizontal */
   justify-content: center;
+
+  /* Mengizinkan card pindah ke baris berikutnya jika ruang tidak cukup */
   flex-wrap: wrap;
+
+  /* Membatasi lebar maksimum container */
   max-width: 800px;
 }
 
+
+/* Mengatur tampilan setiap card */
 .card {
+  /* Memberikan jarak antar card */
   margin: 1rem;
+
+  /* Memberikan jarak di dalam card */
   padding: 1.5rem;
+
+  /* Membuat teks rata kiri */
   text-align: left;
+
+  /* Menggunakan warna teks dari elemen induk */
   color: inherit;
+
+  /* Menghilangkan garis bawah pada link */
   text-decoration: none;
+
+  /* Memberikan garis tepi pada card */
   border: 1px solid #eaeaea;
+
+  /* Membuat sudut card melengkung */
   border-radius: 10px;
+
+  /* Memberikan efek transisi saat warna berubah */
   transition: color 0.15s ease, border-color 0.15s ease;
+
+  /* Membatasi lebar maksimum card */
   max-width: 300px;
 }
 
+
+/* Mengatur tampilan card saat diarahkan, difokuskan, atau diklik */
 .card:hover,
 .card:focus,
 .card:active {
+  /* Mengubah warna teks menjadi biru */
   color: #0070f3;
+
+  /* Mengubah warna border menjadi biru */
   border-color: #0070f3;
 }
 
+
+/* Mengatur heading h2 di dalam card */
 .card h2 {
+  /* Memberikan margin, dengan margin bawah sebesar 1rem */
   margin: 0 0 1rem 0;
+
+  /* Mengatur ukuran teks */
   font-size: 1.5rem;
 }
 
+
+/* Mengatur paragraf di dalam card */
 .card p {
+  /* Menghilangkan margin bawaan */
   margin: 0;
+
+  /* Mengatur ukuran teks */
   font-size: 1.25rem;
+
+  /* Mengatur tinggi baris */
   line-height: 1.5;
 }
 
+
+/* Mengatur container logo */
 .logo {
+  /* Menentukan tinggi logo */
   height: 1em;
+
+  /* Memberikan jarak dari elemen sebelah kiri */
   margin-left: 0.2rem;
 }
 
+
+/* Media query untuk tampilan layar dengan lebar maksimal 600px */
 @media (max-width: 600px) {
+
+  /* Mengatur tampilan grid pada perangkat dengan layar kecil */
   .grid {
+    /* Membuat grid menggunakan seluruh lebar yang tersedia */
     width: 100%;
+
+    /* Mengatur card tampil secara vertikal */
     flex-direction: column;
   }
 }
