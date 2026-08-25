@@ -1,4 +1,9 @@
+/* Memilih elemen html dan body */
 html, body {
+
+  /* Mengatur tinggi halaman menjadi 100% */
   height: 100%;
+
+  /* Mengatur lebar halaman menjadi 100% */
   width: 100%;
 }
