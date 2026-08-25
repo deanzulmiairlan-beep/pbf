@@ -1,4 +1,10 @@
+/* Mengatur tampilan elemen yang memiliki class "App" */
 .App {
+
+  /* Mengatur jenis huruf menjadi sans-serif */
   font-family: sans-serif;
+
+  /* Mengatur teks agar berada di tengah */
   text-align: center;
+
 }
