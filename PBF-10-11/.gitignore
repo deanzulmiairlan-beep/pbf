@@ -1,35 +1,89 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Informasi dokumentasi mengenai penggunaan file .gitignore
+# https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
+
+# ==================================================
+# DEPENDENCIES
+# Mengabaikan folder dan file dependency yang dibuat
+# secara otomatis saat menjalankan npm/yarn/pnpm install
+# ==================================================
+
 /node_modules
 /.pnp
 .pnp.js
 
-# testing
+
+# ==================================================
+# TESTING
+# Mengabaikan hasil laporan pengujian atau code coverage
+# ==================================================
+
 /coverage
 
-# next.js
+
+# ==================================================
+# NEXT.JS
+# Mengabaikan folder hasil build dan output Next.js
+# Folder ini dibuat secara otomatis dan tidak perlu
+# disimpan di repository Git
+# ==================================================
+
 /.next/
 /out/
 
-# production
+
+# ==================================================
+# PRODUCTION BUILD
+# Mengabaikan folder hasil build untuk production
+# ==================================================
+
 /build
 
-# misc
+
+# ==================================================
+# MISCELLANEOUS
+# Mengabaikan file sistem atau file sensitif tertentu
+# ==================================================
+
+# File metadata yang dibuat oleh macOS
 .DS_Store
+
+# File sertifikat atau private key dengan ekstensi .pem
 *.pem
 
-# debug
+
+# ==================================================
+# DEBUG LOGS
+# Mengabaikan file log yang dibuat saat terjadi error
+# atau proses debugging package manager
+# ==================================================
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# local env files
+
+# ==================================================
+# LOCAL ENVIRONMENT FILES
+# Mengabaikan file environment lokal yang dapat berisi
+# API key, password, token, atau konfigurasi sensitif
+# ==================================================
+
 .env*.local
 
-# vercel
+
+# ==================================================
+# VERCEL
+# Mengabaikan folder konfigurasi dan metadata lokal Vercel
+# ==================================================
+
 .vercel
 
-# typescript
+
+# ==================================================
+# TYPESCRIPT
+# Mengabaikan file informasi incremental build TypeScript
+# ==================================================
+
 *.tsbuildinfo
