@@ -1,16 +1,32 @@
+/* Mengatur elemen HTML dan body secara bersamaan */
 html,
 body {
+  /* Menghilangkan padding bawaan browser */
   padding: 0;
+
+  /* Menghilangkan margin bawaan browser */
   margin: 0;
+
+  /* Mengatur jenis font utama yang digunakan pada seluruh halaman */
+  /* Browser akan menggunakan font berikut secara berurutan jika tersedia */
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+
+/* Mengatur seluruh elemen link atau <a> */
 a {
+  /* Menggunakan warna teks dari elemen induknya */
   color: inherit;
+
+  /* Menghilangkan garis bawah bawaan pada link */
   text-decoration: none;
 }
 
+
+/* Mengatur seluruh elemen pada halaman */
 * {
+  /* Memastikan ukuran elemen sudah termasuk padding dan border */
+  /* dalam perhitungan width dan height */
   box-sizing: border-box;
 }
