@@ -1,6 +1,22 @@
+# Mengabaikan semua file dengan ekstensi .class
+# Biasanya merupakan hasil kompilasi dari bahasa Java
 *.class
+
+# Mengabaikan semua file dengan ekstensi .breakpoints
+# Biasanya digunakan untuk menyimpan pengaturan breakpoint saat debugging
 *.breakpoints
+
+# Mengabaikan file konfigurasi Replit
 *.replit
+
+# Mengabaikan folder .agents di seluruh direktori proyek
+# **/ berarti pencarian dilakukan pada semua level folder
 **/.agents/
+
+# Mengabaikan semua file dengan ekstensi .nix
+# Biasanya digunakan untuk konfigurasi lingkungan Nix/Replit
 *.nix
+
+# Mengabaikan folder .settings di seluruh direktori proyek
+# Folder ini biasanya berisi pengaturan IDE atau editor
 **/.settings/
