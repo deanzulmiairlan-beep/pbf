@@ -1,5 +1,10 @@
+/* Mengatur tampilan elemen utama <main> */
 main {
+
+  /* Mengatur teks agar berada di tengah secara horizontal */
   text-align: center;
+
+  /* Mengatur perataan vertikal elemen */
   vertical-align: center;
 
 }
