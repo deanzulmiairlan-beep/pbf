@@ -1,20 +1,46 @@
 <!DOCTYPE html>
+
+<!-- Menentukan bahwa bahasa utama halaman adalah bahasa Inggris -->
 <html lang="en">
+
   <head>
+    <!-- Menentukan format karakter menggunakan UTF-8 -->
     <meta charset="UTF-8" />
+
+    <!-- Menentukan favicon atau ikon yang tampil pada tab browser -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Mengatur tampilan agar responsif pada berbagai ukuran layar -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Menentukan judul halaman yang tampil pada tab browser -->
     <title>React + TypeScript + Replit</title>
   </head>
+
   <body>
+
+    <!-- Elemen utama sebagai tempat React menampilkan seluruh aplikasi -->
     <div id="root"></div>
-    <script type="module" src="/src/index.jsx"></script>
-		
+
     <!--
-    This script places a badge on your repl's full-browser view back to your repl's cover
-    page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-    teal, blue, blurple, magenta, pink!
+      Memanggil file index.jsx sebagai entry point aplikasi React.
+      type="module" digunakan karena aplikasi menggunakan JavaScript ES Module.
     -->
-    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+    <script type="module" src="/src/index.jsx"></script>
+
+    <!--
+      Script berikut digunakan oleh Replit untuk menampilkan badge pada
+      tampilan full-browser yang mengarah kembali ke halaman Repl.
+
+      Theme yang digunakan adalah "blue".
+      Atribut defer membuat script dijalankan setelah HTML selesai diproses.
+    -->
+    <script
+      src="https://replit.com/public/js/replit-badge.js"
+      theme="blue"
+      defer>
+    </script>
+
   </body>
+
 </html>
