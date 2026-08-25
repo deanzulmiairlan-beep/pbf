@@ -1,20 +1,47 @@
+<!-- Menentukan bahwa dokumen menggunakan standar HTML5 -->
 <!DOCTYPE html>
+
+<!-- Membuka dokumen HTML dan menentukan bahasa halaman menggunakan bahasa Inggris -->
 <html lang="en">
+
+  <!-- Bagian head berisi pengaturan dan informasi halaman -->
   <head>
+
+    <!-- Mengatur karakter yang digunakan menjadi UTF-8 -->
     <meta charset="UTF-8" />
+
+    <!-- Menentukan ikon atau favicon yang tampil pada tab browser -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Mengatur tampilan agar responsif pada berbagai ukuran layar -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Menentukan judul halaman yang tampil pada tab browser -->
     <title>React + TypeScript + Replit</title>
+
   </head>
+
+  <!-- Bagian body berisi konten halaman -->
   <body>
+
+    <!-- Membuat elemen root sebagai tempat aplikasi React ditampilkan -->
     <div id="root"></div>
+
+    <!-- Memanggil file index.jsx sebagai file utama aplikasi React -->
+    <!-- type="module" digunakan agar JavaScript dapat menggunakan import dan export -->
     <script type="module" src="/src/index.jsx"></script>
-		
+
     <!--
-    This script places a badge on your repl's full-browser view back to your repl's cover
-    page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-    teal, blue, blurple, magenta, pink!
+    Script berikut digunakan untuk menampilkan badge Replit.
+    Badge dapat mengarahkan pengguna kembali ke halaman project Replit.
+    Tema warna badge dapat diubah sesuai pilihan.
     -->
+
+    <!-- Memanggil script Replit Badge dengan tema warna biru -->
+    <!-- defer membuat script dijalankan setelah dokumen HTML selesai diproses -->
     <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+
   </body>
+
+<!-- Menutup dokumen HTML -->
 </html>
