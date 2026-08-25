@@ -1,12 +1,27 @@
 // vite.config.js
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-var vite_config_default = defineConfig({
+// Mengimpor fungsi defineConfig dari Vite untuk membuat konfigurasi project
+import { defineConfig } from 'vite';
+
+// Mengimpor plugin React agar Vite dapat mendukung aplikasi React
+import react from '@vitejs/plugin-react';
+
+// Referensi dokumentasi konfigurasi Vite
+// https://vitejs.dev/config/
+
+// Mengekspor konfigurasi utama yang digunakan oleh Vite
+export default defineConfig({
+
+  // Menambahkan plugin React ke dalam konfigurasi project
   plugins: [react()],
+
+  // Mengatur konfigurasi server saat project dijalankan
   server: {
-    host: "0.0.0.0"
+
+    // Mengatur host agar server dapat diakses melalui jaringan
+    host: '0.0.0.0',
+
   }
-});
+})
 export {
   vite_config_default as default
 };
