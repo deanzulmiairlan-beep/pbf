@@ -1,23 +1,57 @@
+/* Mengatur elemen yang menggunakan class App */
 .App {
+
+    /* Memberikan jarak 10 piksel dari sisi kiri */
     margin-left: 10px;
 }
 
+
+/* Mengatur seluruh elemen unordered list atau <ul> */
 ul {
+
+    /* Menghilangkan tanda atau simbol bullet pada list */
     list-style-type: none;
+
+    /* Menghilangkan jarak padding bawaan pada list */
     padding: 0;
 }
+
+
+/* Mengatur setiap elemen list <li> yang berada di dalam <ul> */
 ul li {
+
+    /* Memberikan jarak:
+       atas 10px, kanan 10px, bawah 10px, dan kiri 0 */
     margin: 10px 10px 10px 0;
 }
+
+
+/* Mengatur elemen span yang memiliki class complete */
 span.complete {
+
+    /* Memberikan garis coret pada teks */
     text-decoration: line-through;
+
+    /* Mengubah setiap awal kata menjadi huruf kapital */
     text-transform: capitalize;
 }
 
+
+/* Mengatur elemen span yang memiliki class delete-btn */
 span.delete-btn {
+
+    /* Memberikan warna latar belakang merah */
     background-color: red;
+
+    /* Mengatur warna teks menjadi putih */
     color: white;
+
+    /* Mengubah tampilan kursor menjadi pointer saat diarahkan */
     cursor: pointer;
+
+    /* Memberikan jarak 3 piksel di dalam elemen */
     padding: 3px;
+
+    /* Menempatkan elemen di sisi kanan */
     float: right;
 }
