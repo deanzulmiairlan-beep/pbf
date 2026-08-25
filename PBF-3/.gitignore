@@ -1,5 +1,14 @@
+# Mengabaikan folder node_modules yang berisi dependency/library project
 node_modules
+
+# Mengabaikan file .DS_Store yang biasanya dibuat otomatis oleh macOS
 .DS_Store
+
+# Mengabaikan folder dist yang berisi hasil build project
 dist
+
+# Mengabaikan folder dist-ssr yang berisi hasil build untuk server-side rendering
 dist-ssr
+
+# Mengabaikan semua file yang memiliki ekstensi .local
 *.local
